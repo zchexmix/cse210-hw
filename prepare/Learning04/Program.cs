@@ -15,7 +15,7 @@ class Program
         Console.WriteLine(M1.GetSummary());
         Console.WriteLine(M1.GetHomeworkList());
 
-        Console.WriteLine()
+        Console.WriteLine();
 
        Writing W1 = new Writing("Mary Waters", "European War", "The Cause of WWII by Mary Waters");
        Console.WriteLine(W1.GetSummary());
