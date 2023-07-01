@@ -1,6 +1,9 @@
 class ListingActivity : Activity
 {
     private string[] prompts = {
+        "What are some of your new years resolutions that you can re-focus on?",
+        "What is something you are feeling grateful for today and why?",
+        "What is your greatest achievement in life so far? What else do you want to achieve?",
         "Who are people that you appreciate?",
         "What are personal strengths of yours?",
         "Who are people that you have helped this week?",
@@ -10,13 +13,13 @@ class ListingActivity : Activity
 
     public override void Start()
     {
-        StartActivity("Listing Activity", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.");
+        StartActivity("Listing Activity", "This will help you reflect on the good things in your life.");
 
         Random random = new Random();
         int promptIndex = random.Next(prompts.Length);
 
         Console.WriteLine(prompts[promptIndex]);
-        Console.WriteLine("Begin thinking about the prompt...");
+        Console.WriteLine("Thinking about the prompt...");
         Thread.Sleep(5000);
 
         Console.WriteLine("Start listing items. Press Enter after each item.");
