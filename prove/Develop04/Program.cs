@@ -32,7 +32,7 @@ class Program
                     exit = true;
                     break;
                 default:
-                    Console.WriteLine("Invalid choice. Please try again.");
+                    Console.WriteLine("Please try again.");
                     break;
             }
 
